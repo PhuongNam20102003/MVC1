@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Thuongmaidientu
+build_property.RootNamespace = Thuongmaidientu
+build_property.ProjectDir = C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlckhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Hanghoa/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Hanghoa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Hanghoa/ProductItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxQcm9kdWN0SXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Hanghoa/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Home/PageNotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdlTm90Rm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/KhachHang/Dangky.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdreS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/KhachHang/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdOaGFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/KhachHang/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/NhanVien/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGFuZ05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/Components/Cart/CartPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/Components/MenuLoai/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/_DanhSachHangHoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5oU2FjaEhhbmdIb2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/_LayoutCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/_TimKiemPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaW1LaWVtUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yob5bconbw

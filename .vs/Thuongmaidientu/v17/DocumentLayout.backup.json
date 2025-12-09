@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|c:\\users\\nam\\source\\repos\\thuongmaidientu\\thuongmaidientu\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|solutionrelative:thuongmaidientu\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|c:\\users\\nam\\source\\repos\\thuongmaidientu\\thuongmaidientu\\viewmodels\\hanghoavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|solutionrelative:thuongmaidientu\\viewmodels\\hanghoavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|c:\\users\\nam\\source\\repos\\thuongmaidientu\\thuongmaidientu\\views\\hanghoa\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|solutionrelative:thuongmaidientu\\views\\hanghoa\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|c:\\users\\nam\\source\\repos\\thuongmaidientu\\thuongmaidientu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|solutionrelative:thuongmaidientu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|c:\\users\\nam\\source\\repos\\thuongmaidientu\\thuongmaidientu\\viewmodels\\hanghoavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|solutionrelative:thuongmaidientu\\viewmodels\\hanghoavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33F96C1C-3A30-4B56-B8FC-5E06F9FC4B04}|Thuongmaidientu\\Thuongmaidientu.csproj|c:\\users\\nam\\source\\repos\\thuongmaidientu\\thuongmaidientu\\views\\shared\\_layoutcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -174,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -182,7 +186,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Dockerfile.txt",
+              "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Dockerfile.txt",
+              "RelativeDocumentMoniker": "Thuongmaidientu\\Dockerfile.txt",
+              "ToolTip": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Dockerfile.txt",
+              "RelativeToolTip": "Thuongmaidientu\\Dockerfile.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HanghoaVM.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\ViewModels\\HanghoaVM.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\ViewModels\\HanghoaVM.cs",
@@ -195,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "urlfriendly.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Helpers\\urlfriendly.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Helpers\\urlfriendly.cs",
@@ -203,12 +218,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Helpers\\urlfriendly.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T10:32:42.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T10:32:42.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "HanghoaController.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Controllers\\HanghoaController.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Controllers\\HanghoaController.cs",
@@ -216,12 +230,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Controllers\\HanghoaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T21:30:59.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T21:30:59.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductItem.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Hanghoa\\ProductItem.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Hanghoa\\ProductItem.cshtml",
@@ -229,12 +242,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Hanghoa\\ProductItem.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-07T13:07:14.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T13:07:14.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Hanghoa\\Detail.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Hanghoa\\Detail.cshtml",
@@ -242,12 +254,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Hanghoa\\Detail.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-13T21:24:39.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T21:24:39.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Hanghoa\\Index.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Hanghoa\\Index.cshtml",
@@ -255,12 +266,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Hanghoa\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-13T21:27:32.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T21:27:32.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Home\\Index.cshtml",
@@ -268,12 +278,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-07T13:09:04.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T13:09:04.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Program.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Program.cs",
@@ -281,12 +290,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Program.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T17:51:03.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T17:51:03.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\_ViewStart.cshtml",
@@ -294,12 +302,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T10:17:05.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T10:17:05.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_LayoutCustomer.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Shared\\_LayoutCustomer.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Shared\\_LayoutCustomer.cshtml",
@@ -307,12 +314,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Shared\\_LayoutCustomer.cshtml",
               "ViewState": "AgIAAG0AAAAAAAAAAAAkwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-13T12:33:17.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:33:17.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SellerController.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Controllers\\SellerController.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Controllers\\SellerController.cs",
@@ -320,12 +326,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Controllers\\SellerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T06:34:37.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T06:34:37.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Controllers\\CartController.cs",
@@ -333,12 +338,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Controllers\\CartController.cs",
               "ViewState": "AgIAAPEAAAAAAAAAAAAcwKAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T03:53:23.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T03:53:23.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Cart\\Checkout.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Cart\\Checkout.cshtml",
@@ -346,12 +350,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Cart\\Checkout.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAF0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-07T05:02:35.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T05:02:35.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Search.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Hanghoa\\Search.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Hanghoa\\Search.cshtml",
@@ -359,12 +362,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Hanghoa\\Search.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-07T13:08:27.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T13:08:27.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "NhanVienController.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Controllers\\NhanVienController.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Controllers\\NhanVienController.cs",
@@ -372,12 +374,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Controllers\\NhanVienController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T05:52:22.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T05:52:22.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "OrderHistory.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Cart\\OrderHistory.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Cart\\OrderHistory.cshtml",
@@ -385,12 +386,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Cart\\OrderHistory.cshtml",
               "ViewState": "AgIAAAcAAAAAAAAAAAAkwBcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T05:42:31.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T05:42:31.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Cart\\Index.cshtml",
@@ -398,12 +398,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Cart\\Index.cshtml",
               "ViewState": "AgIAAGMAAAAAAAAAAAAAAH0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-13T21:32:42.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T21:32:42.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Success.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Cart\\Success.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Cart\\Success.cshtml",
@@ -411,12 +410,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\Cart\\Success.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-07T06:16:17.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T06:16:17.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "KhachHangController.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Controllers\\KhachHangController.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Controllers\\KhachHangController.cs",
@@ -424,12 +422,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Controllers\\KhachHangController.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAYwKIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T04:16:10.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T04:16:10.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MyeStoreContext.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Data\\MyeStoreContext.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Data\\MyeStoreContext.cs",
@@ -437,12 +434,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Data\\MyeStoreContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T04:52:13.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T04:52:13.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DangNhap.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\KhachHang\\DangNhap.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\KhachHang\\DangNhap.cshtml",
@@ -450,12 +446,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\KhachHang\\DangNhap.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-06T19:15:58.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T19:15:58.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DangNhap.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\NhanVien\\DangNhap.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\NhanVien\\DangNhap.cshtml",
@@ -463,12 +458,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\NhanVien\\DangNhap.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAAAQwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T06:37:22.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T06:37:22.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\ViewModels\\RegisterVM.cs",
@@ -476,12 +470,11 @@
               "RelativeToolTip": "Thuongmaidientu\\ViewModels\\RegisterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T03:59:06.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T03:59:06.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\ViewModels\\LoginVM.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\ViewModels\\LoginVM.cs",
@@ -489,12 +482,11 @@
               "RelativeToolTip": "Thuongmaidientu\\ViewModels\\LoginVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T18:50:21.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T18:50:21.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Dangky.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\KhachHang\\Dangky.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\KhachHang\\Dangky.cshtml",
@@ -502,12 +494,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Views\\KhachHang\\Dangky.cshtml",
               "ViewState": "AgIAAFoAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-05T04:20:06.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T04:20:06.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Data\\KhachHang.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Data\\KhachHang.cs",
@@ -515,12 +506,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Data\\KhachHang.cs",
               "ViewState": "AgIAABYAAAAAAAAAAADwvx0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T03:59:40.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T03:59:40.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "DataEncryptionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Helpers\\DataEncryptionExtensions.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Helpers\\DataEncryptionExtensions.cs",
@@ -528,12 +518,11 @@
               "RelativeToolTip": "Thuongmaidientu\\Helpers\\DataEncryptionExtensions.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAADwvxMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T06:29:09.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T06:29:09.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "CheckoutVM.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\ViewModels\\CheckoutVM.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\ViewModels\\CheckoutVM.cs",
@@ -545,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IVnPayServices.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Services\\IVnPayServices.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Services\\IVnPayServices.cs",
@@ -557,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Shared\\_Layout.cshtml",
@@ -569,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\KhachHang\\Profile.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\KhachHang\\Profile.cshtml",
@@ -581,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Shared\\Error.cshtml",
@@ -593,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "_TimKiemPanel.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Shared\\_TimKiemPanel.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Shared\\_TimKiemPanel.cshtml",
@@ -605,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "_DanhSachHangHoa.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Shared\\_DanhSachHangHoa.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Shared\\_DanhSachHangHoa.cshtml",
@@ -617,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "_Footer.cshtml",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Views\\Shared\\_Footer.cshtml",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Views\\Shared\\_Footer.cshtml",
@@ -629,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "PaypalClient.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Helpers\\PaypalClient.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Helpers\\PaypalClient.cs",
@@ -641,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\appsettings.json",
               "RelativeDocumentMoniker": "Thuongmaidientu\\appsettings.json",
@@ -653,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "MySetting.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Helpers\\MySetting.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Helpers\\MySetting.cs",
@@ -665,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "VnPayLibrary.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Helpers\\VnPayLibrary.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Helpers\\VnPayLibrary.cs",
@@ -677,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "VnPaymentResponseModel.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\ViewModels\\VnPaymentResponseModel.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\ViewModels\\VnPaymentResponseModel.cs",
@@ -689,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "AutoMapperProFile.cs",
               "DocumentMoniker": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\Helpers\\AutoMapperProFile.cs",
               "RelativeDocumentMoniker": "Thuongmaidientu\\Helpers\\AutoMapperProFile.cs",
