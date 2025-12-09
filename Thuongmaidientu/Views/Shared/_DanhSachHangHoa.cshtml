@@ -1,0 +1,107 @@
+﻿@{
+    Layout = "_LayoutCustomer";
+}
+
+<!-- Header trang Shop -->
+@RenderSection("BreadCum", required: false)
+
+<!-- Shop Start -->
+<div class="container-fluid py-5 fruite">
+    <div class="container py-5">
+        <h1 class="mb-4">N&NShop</h1>
+        <div class="row g-4">
+            <!-- Sidebar lọc sản phẩm -->
+            <aside class="col-lg-3">
+                <div class="row g-4">
+                    <!-- Tìm kiếm -->
+                    <div class="col-12">
+                        <form asp-action="Search" asp-controller="HangHoa" class="input-group w-100">
+                            <input type="search" name="query" class="form-control border-0 p-3" placeholder="Tìm kiếm sản phẩm..." />
+                            <button class="btn btn-primary px-4" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Danh mục sản phẩm -->
+                    <div class="col-12">
+                        @await Component.InvokeAsync("MenuLoai")
+                    </div>
+
+                    <!-- Khoảng giá -->
+                    <div class="col-12">
+                        <h4 class="mb-2">Giá</h4>
+                        <input type="range" class="form-range" id="rangeInput" name="rangeInput" min="0" max="500" value="0" oninput="amount.value=rangeInput.value">
+                        <output id="amount" name="amount">0</output>
+                    </div>
+
+                    <!-- Lựa chọn thêm -->
+                    <div class="col-12">
+                        <h4 class="mb-2">Lựa chọn thêm</h4>
+                        <div class="form-check mb-2">
+                            <input type="radio" class="form-check-input" id="Categories-1" name="Categories" value="Organic">
+                            <label for="Categories-1" class="form-check-label">Hữu cơ</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="radio" class="form-check-input" id="Categories-2" name="Categories" value="Fresh">
+                            <label for="Categories-2" class="form-check-label">Tươi</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="radio" class="form-check-input" id="Categories-3" name="Categories" value="Sales">
+                            <label for="Categories-3" class="form-check-label">Khuyến mãi</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="radio" class="form-check-input" id="Categories-4" name="Categories" value="Discount">
+                            <label for="Categories-4" class="form-check-label">Giảm giá</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="radio" class="form-check-input" id="Categories-5" name="Categories" value="Expired">
+                            <label for="Categories-5" class="form-check-label">Sắp hết hạn</label>
+                        </div>
+                    </div>
+
+                    <!-- Sản phẩm nổi bật -->
+                    <div class="col-12">
+                        <h4 class="mb-3">Sản phẩm nổi bật</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="img/featur-1.jpg" class="img-fluid rounded me-3" style="width:80px; height:80px;" alt="Chuối lớn">
+                            <div>
+                                <h6>Chuối lớn</h6>
+                                <div class="d-flex mb-2">
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="fw-bold me-2 text-primary">2.99 $</span>
+                                    <span class="text-muted text-decoration-line-through">4.11 $</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary w-100 rounded-pill">Xem thêm</a>
+                    </div>
+
+                    <!-- Banner quảng cáo -->
+                    <div class="col-12 mt-4">
+                        <div class="position-relative">
+                            <img src="img/banner-fruits.jpg" class="img-fluid rounded" alt="Banner">
+                            <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
+                                <h3 class="text-secondary fw-bold">Trái cây <br> tươi ngon <br> N&NShop</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Danh sách sản phẩm -->
+            <main class="col-lg-9">
+                <div class="row g-4 justify-content-center">
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<!-- Shop End -->

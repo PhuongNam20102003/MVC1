@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Thuongmaidientu.Data.HoaDon>
+@{
+    ViewData["Title"] = "Đơn hàng của khách";
+}
+
+<h2>Đơn hàng của khách</h2>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Mã Hóa Đơn</th>
+            <th>Khách Hàng</th>
+            <th>Ngày Đặt</th>
+            <th>Địa Chỉ / SĐT / Thanh Toán</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.MaHd</td>
+                    <td>@order.MaKh</td>
+                    <td>@order.NgayDat.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>
+                        <p>Địa chỉ: @order.DiaChi</p>
+                        <p>SĐT: @order.DienThoai</p>
+                        <p>Thanh toán: @order.CachThanhToan</p>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-center">Chưa có hóa đơn nào.</td>
+            </tr>
+        }
+    </tbody>
+</table>

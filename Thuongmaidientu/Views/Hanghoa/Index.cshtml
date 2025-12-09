@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Thuongmaidientu.ViewModels.HanghoaVM>
+@{
+    ViewData["Title"] = "Cửa hàng";
+    Layout = "_DanhSachHangHoa";
+}
+
+@section BreadCum {
+    <div class="container-fluid page-header py-5">
+        <h1 class="text-center text-white display-6">Cửa hàng N&NShop</h1>
+        <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+            <li class="breadcrumb-item active text-white">Cửa hàng</li>
+        </ol>
+    </div>
+}
+
+<div class="container py-5">
+    <div class="row g-4">
+        @await Html.PartialAsync("ProductItem", Model)
+    </div>
+</div>

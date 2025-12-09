@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Thuongmaidientu.ViewModels.CartItem>
+@{
+    ViewData["Title"] = "Giỏ Hàng";
+    var subtotal = Model?.Sum(p => p.TongTien) ?? 0;
+    var shippingFee = 30000;
+    var total = subtotal + shippingFee;
+}
+
+<div class="container py-5">
+    <h1 class="mb-4">Giỏ Hàng</h1>
+
+    <div class="table-responsive">
+        <table class="table align-middle" id="cartTable">
+            <thead class="table-light">
+                <tr>
+                    <th>Sản Phẩm</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng Tiền</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr data-id="@item.MaHh">
+                            <td><img src="@Url.Content("~/Hinh/HangHoa/" + item.Hinh)" class="rounded" style="width:80px; height:80px;" /></td>
+                            <td>@item.TenHh</td>
+                            <td data-price="@item.DonGia">@item.DonGia.ToString("N0") ₫</td>
+                            <td>
+                                <div class="input-group" style="width:120px;">
+                                    <button class="btn btn-outline-secondary btn-sm btn-minus">-</button>
+                                    <input type="text" class="form-control form-control-sm text-center quantity-input" value="@item.SoLuong" />
+
+                                    <button class="btn btn-outline-secondary btn-sm btn-plus">+</button>
+                                </div>
+                            </td>
+                            <td class="item-total">@item.TongTien.ToString("N0") ₫</td>
+                            <td><button class="btn btn-danger btn-sm btn-remove">Xóa</button></td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">Giỏ hàng trống</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="float-end mt-4 p-3 bg-light rounded" style="width:300px;">
+        <h5>Tổng Giỏ Hàng</h5>
+        <hr />
+        <div class="d-flex justify-content-between">
+            <span>Tạm tính:</span>
+            <span id="subtotal">@subtotal.ToString("N0") ₫</span>
+        </div>
+        <div class="d-flex justify-content-between">
+            <span>Phí vận chuyển:</span>
+            <span>@shippingFee.ToString("N0") ₫</span>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between fw-bold">
+            <span>Tổng cộng:</span>
+            <span id="total">@total.ToString("N0") ₫</span>
+        </div>
+        <a class="btn btn-primary w-100 mt-3" asp-controller="Cart" asp-action="Checkout">Thanh Toán</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function updateCartRow(row, newQty){
+                    if(newQty < 1) newQty = 1;
+        var id = row.data("id");
+
+        $.get('@Url.Action("UpdateQuantity", "Cart")',
+            { id: id, quantity: newQty },
+            function(data){
+                row.find(".quantity-input").val(newQty);
+
+                var price = parseInt(row.find("td[data-price]").data("price"));
+                row.find(".item-total").text((price * newQty).toLocaleString("vi-VN") + " ₫");
+
+                $("#subtotal").text(data.subtotal.toLocaleString("vi-VN") + " ₫");
+                $("#total").text(data.total.toLocaleString("vi-VN") + " ₫");
+        });
+
+        }
+
+        $(document).on('click', '.btn-plus', function(){
+            var row = $(this).closest('tr');
+            var qty = parseInt(row.find('.quantity-input').val()) + 1;
+            updateCartRow(row, qty);
+        });
+
+        $(document).on('click', '.btn-minus', function(){
+            var row = $(this).closest('tr');
+            var qty = parseInt(row.find('.quantity-input').val()) - 1;
+            updateCartRow(row, qty);
+        });
+
+        $(document).on('click', '.btn-remove', function(){
+            var row = $(this).closest('tr');
+            var id = row.data('id');
+            $.get('/Cart/RemoveCartAjax', { id: id }, function(data){
+                row.remove();
+                $("#subtotal").text(data.subtotal.toLocaleString("vi-VN") + " ₫");
+                $("#total").text(data.total.toLocaleString("vi-VN") + " ₫");
+                if($("#cartTable tbody tr").length == 0){
+                    $("#cartTable tbody").append('<tr><td colspan="6" class="text-center">Giỏ hàng trống</td></tr>');
+                }
+            });
+        });
+                $(document).on('change', '.quantity-input', function() {
+            var row = $(this).closest('tr');
+            var qty = parseInt($(this).val());
+            if(isNaN(qty) || qty < 1) qty = 1;
+            updateCartRow(row, qty);
+        });
+    </script>
+}

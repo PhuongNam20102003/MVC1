@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Thuongmaidientu.ViewModels.HanghoaVM>
+@{
+    ViewData["Title"] = "Tìm Kiếm";
+    Layout = "_DanhSachHangHoa";
+}
+
+<!-- Header trang Search -->
+@section BreadCum {
+    <div class="container-fluid page-header py-5">
+        <h1 class="text-center text-white display-6">Kết quả tìm kiếm</h1>
+        <ol class="breadcrumb justify-content-center mb-0" aria-label="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">Tìm kiếm</li>
+        </ol>
+    </div>
+}
+
+<!-- Danh sách sản phẩm -->
+<div class="container py-5">
+    <h4 class="mb-4">Kết quả tìm kiếm cho từ khóa: <span class="text-primary">@ViewData["Query"]</span></h4>
+    <div class="row g-4">
+        @await Html.PartialAsync("ProductItem", Model)
+    </div>
+
+    <!-- Nếu muốn, có thể thêm phân trang -->
+    @*<div class="col-12">
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-5">
+                <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+        </nav>
+    </div>*@
+</div>
+
+

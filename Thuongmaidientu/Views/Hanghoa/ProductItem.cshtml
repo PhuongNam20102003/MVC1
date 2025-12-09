@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Thuongmaidientu.ViewModels.HanghoaVM>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+                <img src="~/Hinh/HangHoa/@item.Hinh" class="card-img-top img-fluid" alt="@item.TenHh">
+                <div class="card-body text-center">
+                    <h6 class="card-title">@item.TenHh</h6>
+                    <p class="text-primary fw-bold">@item.DonGia.ToString("C0")</p>
+
+                    <!-- Link SEO-friendly -->
+                    <a asp-controller="Hanghoa"
+                       asp-action="Detail"
+                       asp-route-id="@item.MaHh"
+                       asp-route-slug="@item.Slug"
+                       class="btn btn-outline-primary btn-sm w-100 mb-2">
+                        Xem chi tiết
+                    </a>
+
+                    <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                        <input type="hidden" name="id" value="@item.MaHh" />
+                        <input type="hidden" name="quantity" value="1" />
+                        <button type="submit" class="btn btn-primary btn-sm w-100">Thêm vào giỏ hàng</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="col-12 text-center">
+        <p>Chưa có sản phẩm nào.</p>
+    </div>
+}
+
