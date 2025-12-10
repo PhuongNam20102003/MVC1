@@ -8,6 +8,7 @@ namespace Thuongmaidientu.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -33,5 +34,12 @@ namespace Thuongmaidientu.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult Indes()
+        {
+            ViewData["MetaDescription"] = "N&NShop cung c?p ða d?ng s?n ph?m týõi ngon, ch?t lý?ng cao v?i giá c? h?p l?. Khám phá ngay các s?n ph?m n?i b?t và ýu ð?i h?p d?n!";
+            return View();
+        }
+
     }
 }

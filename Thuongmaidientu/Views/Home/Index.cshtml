@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Trang Chủ";
+    ViewData["MetaDescription"] = "N&NShop cung cấp đa dạng sản phẩm tươi ngon, chất lượng cao với giá cả hợp lý. Khám phá ngay các sản phẩm nổi bật và ưu đãi hấp dẫn!";
 }
 
 <!-- Banner trang chủ -->
@@ -7,8 +8,8 @@
     <div class="position-relative">
         <img src="~/img/banner.jpg" class="img-fluid w-100" alt="Banner N&NShop" style="max-height: 500px; object-fit: cover;">
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-            <h1 class="display-4 fw-bold">Chào mừng đến với N&NShop</h1>
-            <p class="lead">Khám phá các sản phẩm tươi ngon, chất lượng cao</p>
+            <h1 class="display-4 fw-bold">Chào mừng đến với N&NShop - Sản phẩm tươi ngon, chất lượng cao</h1>
+            <p class="lead">Khám phá các sản phẩm nổi bật và ưu đãi hấp dẫn</p>
             <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Hanghoa")">Mua Ngay</a>
         </div>
     </div>
@@ -18,12 +19,11 @@
 <div class="container py-5">
     <h2 class="mb-4">Sản phẩm nổi bật</h2>
     <div class="row g-4">
-        @* Ví dụ tĩnh, có thể thay bằng dữ liệu từ DB *@
         <div class="col-md-3">
             <div class="card h-100">
                 <img src="~/img/featured1.jpg" class="card-img-top" alt="Sản phẩm 1">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Sản phẩm 1</h5>
+                    <h3 class="card-title">Sản phẩm 1</h3>
                     <p class="text-primary fw-bold">2.99 $</p>
                     <a class="btn btn-outline-primary btn-sm" href="@Url.Action("Detail", "Hanghoa", new { id = 1 })">Xem chi tiết</a>
                 </div>
@@ -33,13 +33,12 @@
             <div class="card h-100">
                 <img src="~/img/featured2.jpg" class="card-img-top" alt="Sản phẩm 2">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Sản phẩm 2</h5>
+                    <h3 class="card-title">Sản phẩm 2</h3>
                     <p class="text-primary fw-bold">3.49 $</p>
                     <a class="btn btn-outline-primary btn-sm" href="@Url.Action("Detail", "Hanghoa", new { id = 2 })">Xem chi tiết</a>
                 </div>
             </div>
         </div>
-        @* Thêm các sản phẩm khác tương tự *@
     </div>
 </div>
 

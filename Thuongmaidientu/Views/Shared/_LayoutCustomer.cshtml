@@ -4,8 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@ViewData["Title"] - N&NShop</title>
+    <link rel="canonical" href="https://www.nnshop.com/" />
+    <!-- Meta description -->
+    <meta name="description" content="N&NShop cung cấp đa dạng sản phẩm tươi ngon, chất lượng cao với giá cả hợp lý. Khám phá ngay các sản phẩm nổi bật và ưu đãi hấp dẫn!">
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta property="og:title" content="@ViewData["Title"] - N&NShop" />
+    <meta property="og:description" content="@ViewData["MetaDescription"]" />
+    <meta property="og:image" content="https://www.nnshop.com/img/banner.jpg" />
+    <meta property="og:url" content="https://www.nnshop.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,12 +31,81 @@
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
 
+    <!-- Schema.org JSON-LD -->
+    @{
+        var schemaJson = @"{
+    ""@context"": ""https://schema.org"",
+    ""@type"": ""Store"",
+    ""name"": ""N&NShop"",
+    ""image"": ""https://www.nnshop.com/img/banner.jpg"",
+    ""url"": ""https://www.nnshop.com/"",
+    ""telephone"": ""+012345678910"",
+    ""address"": {
+    ""@type"": ""PostalAddress"",
+    ""streetAddress"": ""45 Nguyễn Hữu Thọ, P. Tân Hưng"",
+    ""addressLocality"": ""TP.HCM"",
+    ""addressCountry"": ""VN""
+    },
+    ""sameAs"": [
+    ""https://www.facebook.com/nnshop"",
+    ""https://twitter.com/nnshop"",
+    ""https://www.instagram.com/nnshop""
+    ]
+    }";
+    }
+    <script type="application/ld+json">
+        @Html.Raw(schemaJson)
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V34RY0PZFW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-V34RY0PZFW');
+    </script>
+
+    <link rel="icon" type="image/png" href="@Url.Content("~/favicon-96x96.png")" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="@Url.Content("~/favicon.svg")" />
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
+    <link rel="apple-touch-icon" sizes="180x180" href="@Url.Content("~/apple-touch-icon.png")" />
+    <link rel="manifest" href="@Url.Content("~/site.webmanifest")" />
+
+    <!-- Facebook Messenger Chat Plugin -->
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <a href="https://m.me/954850664368521" target="_blank">Chat với chúng tôi trên Messenger</a>
+    <!-- Load SDK Facebook -->
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v17.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
     <!-- Head section từ view (SEO, OG, canonical) -->
     @RenderSection("Head", required: false)
 
     @RenderSection("Styles", required: false)
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"></script>
     <!-- Spinner -->
     <div id="spinner" class="show w-100 vh-100 bg-white position-fixed top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
@@ -109,6 +185,14 @@
     <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top">
         <i class="fa fa-arrow-up"></i>
     </a>
+
+    <div class="fb-customerchat"
+         attribution="setup_tool"
+         page_id="954850664368521"
+         theme_color="#0084ff"
+         logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
+         logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?">
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

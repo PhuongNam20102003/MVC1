@@ -1245,6 +1245,34 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\favicon-96x96.png",
+      "PackagePath": "staticwebassets\\favicon\\favicon-96x96.png"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\favicon.svg",
+      "PackagePath": "staticwebassets\\favicon\\favicon.svg"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\favicon\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\web-app-manifest-192x192.png",
+      "PackagePath": "staticwebassets\\favicon\\web-app-manifest-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\web-app-manifest-512x512.png",
+      "PackagePath": "staticwebassets\\favicon\\web-app-manifest-512x512.png"
+    },
+    {
       "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\avatar.jpg",
       "PackagePath": "staticwebassets\\img\\avatar.jpg"
     },
@@ -1721,8 +1749,16 @@
       "PackagePath": "staticwebassets\\lib\\wow\\wow.min.js"
     },
     {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
+    },
+    {
       "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\shop.html",
       "PackagePath": "staticwebassets\\shop.html"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\sitemap.xml",
+      "PackagePath": "staticwebassets\\sitemap.xml"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Thuongmaidientu.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

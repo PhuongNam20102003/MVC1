@@ -200,7 +200,6 @@ C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\stati
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Thuongmaidientu.props
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Thuongmaidientu.props
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\Thuongma.6938D3A0.Up2Date
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\Thuongmaidientu.dll
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\refint\Thuongmaidientu.dll
@@ -354,3 +353,11 @@ C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\bin\Debug\net9.0\zh-Ha
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\Thuongmaidientu.sourcelink.json
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\bin\Debug\net9.0\Npgsql.dll
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\oeh4xv9svo-qwy222ld1o.gz
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\b8zmoedt4w-p1yzh5mpsi.gz
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\nmb5vvn6zw-vwxzmjkmsq.gz
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\9rj49l8ree-jg5j1u6k8b.gz
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\r8yx3b48ts-tdutd00xgn.gz

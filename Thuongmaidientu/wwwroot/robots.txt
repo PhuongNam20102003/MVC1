@@ -1,0 +1,8 @@
+﻿# robots.txt for N&NShop
+
+# Cho phép tất cả các bot truy cập mọi trang
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://www.nnshop.com/sitemap.xml
