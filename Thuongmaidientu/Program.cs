@@ -15,6 +15,25 @@ builder.Services.AddDbContext<MyeStoreContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("eStore"));
 });
 
+builder.Services.AddAuthentication()
+    .AddCookie("SellerCookie", options =>
+    {
+        options.LoginPath = "/NhanVien/DangNhap";
+        options.Cookie.Name = "SellerCookie";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.IsEssential = true;
+        options.Cookie.MaxAge = null; // mất khi tắt trình duyệt
+    })
+    .AddCookie("CustomerCookie", options =>
+    {
+        options.LoginPath = "/KhachHang/DangNhap";
+        options.Cookie.Name = "CustomerCookie";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.IsEssential = true;
+        options.Cookie.MaxAge = null; // mất khi tắt trình duyệt
+    });
+
+
 builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddSession(options =>

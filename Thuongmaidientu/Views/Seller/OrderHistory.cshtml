@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Thuongmaidientu.Data.HoaDon>
+@{
+    ViewData["Title"] = "Đơn hàng của khách";
+}
+
+<h2>Đơn hàng của khách</h2>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Mã Hóa Đơn</th>
+            <th>Khách Hàng</th>
+            <th>Ngày Đặt</th>
+            <th>Địa Chỉ / SĐT / Thanh Toán</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Tổng tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            var firstItem = true;
+            var totalRows = order.ChiTietHds.Count;
+
+            foreach (var item in order.ChiTietHds)
+            {
+                <tr>
+                    @if (firstItem)
+                    {
+                        <td rowspan="@totalRows">@order.MaHd</td>
+                        <td rowspan="@totalRows">@order.MaKhNavigation?.HoTen</td>
+                        <td rowspan="@totalRows">@order.NgayDat.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td rowspan="@totalRows">
+                            Địa chỉ: @order.DiaChi <br />
+                            SĐT: @order.DienThoai <br />
+                            Thanh toán: @order.CachThanhToan
+                        </td>
+                        <td>@item.MaHhNavigation?.TenHh</td>
+                        <td rowspan="@totalRows">@order.ChiTietHds.Sum(i => i.DonGia * i.SoLuong).ToString("N0") ₫</td>
+                        firstItem = false;
+                    }
+                    else
+                    {
+                        <td>@item.MaHhNavigation?.TenHh</td>
+                    }
+                </tr>
+            }
+        }
+
+
+    </tbody>
+</table>

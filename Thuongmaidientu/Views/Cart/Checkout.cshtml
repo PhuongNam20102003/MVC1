@@ -2,132 +2,162 @@
 
 @{
     var subtotal = Model?.Sum(p => p.TongTien) ?? 0;
-    var shippingFee = 30000;
+    var shippingFee = 0;
     var total = subtotal + shippingFee;
 }
 
 <style>
+    .checkout-wrapper {
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+
+    .checkout-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+    }
+
     .checkout-card {
-        max-width: 700px;
-        margin: auto;
         background: #fff;
         padding: 25px;
         border-radius: 12px;
-        box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
     }
 
     .checkout-title {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 700;
         margin-bottom: 20px;
-        text-align: center;
     }
 
-    .payment-box {
-        border: 1px solid #ddd;
+    .payment-box, .summary-box {
+        border: 1px solid #eee;
         padding: 15px;
         border-radius: 10px;
         margin-bottom: 20px;
     }
 
-        .payment-box label {
-            font-weight: 600;
-        }
+    .summary-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
 
-    .summary-box {
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 20px;
+    .summary-total {
+        font-weight: bold;
+        font-size: 18px;
+        color: #2e7d32;
     }
 </style>
 
-<div class="checkout-card mt-4">
-    <h2 class="checkout-title">THANH TOÁN</h2>
-
+<div class="checkout-wrapper">
     <form id="checkoutForm" method="post" asp-action="Checkout" asp-controller="Cart">
-        <!-- THÔNG TIN GIAO HÀNG -->
-        <h5 class="mb-3">Thông tin giao hàng</h5>
-        <div class="form-check mb-3">
-            <input type="checkbox" id="GiongKhachHang" name="GiongKhachHang" value="true" class="form-check-input" />
-            <label class="form-check-label fw-bold">
-                Giống thông tin khách hàng
-            </label>
+
+        <div class="checkout-grid">
+
+            <!-- ================= CỘT TRÁI ================= -->
+            <div class="checkout-card">
+
+                <h2 class="checkout-title">Thông tin giao hàng</h2>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="GiongKhachHang" name="GiongKhachHang" value="true" class="form-check-input" />
+                    <label class="form-check-label fw-bold">Giống thông tin khách hàng</label>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="mb-3">
+                        <label class="form-label">Họ tên</label>
+                        <input type="text" name="HoTen" class="form-control user-input" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Địa chỉ</label>
+                        <input type="text" name="DiaChi" class="form-control user-input" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Điện thoại</label>
+                        <input type="text" name="DienThoai" class="form-control user-input" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Ghi chú</label>
+                    <textarea name="GhiChu" class="form-control"></textarea>
+                </div>
+
+                <h5 class="mt-4 mb-3">Phương thức thanh toán</h5>
+
+                <div class="payment-box">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="payment" value="COD" checked />
+                        <label class="form-check-label">Thanh toán khi nhận hàng (COD)</label>
+                    </div>
+
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="payment" value="Thanh toán VNPay" />
+                        <label class="form-check-label">Thanh toán qua VNPay</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" value="PayPal" id="payPalRadio" />
+                        <label class="form-check-label" for="payPalRadio">Thanh toán bằng PayPal</label>
+                    </div>
+                </div>
+
+                <!-- NÚT PAYPAL -->
+                <div id="paypal-button-container" style="margin-top:10px; display:none;"></div>
+
+                <button type="submit" class="btn btn-success w-100 py-2 fs-5 mt-3">
+                    XÁC NHẬN THANH TOÁN
+                </button>
+
+            </div>
+
+            <!-- ================= CỘT PHẢI ================= -->
+            <div class="checkout-card">
+
+                <h4 class="mb-3">Đơn hàng của bạn</h4>
+
+                @foreach (var item in Model)
+                {
+                    <div class="summary-item">
+                        <span>@item.TenHh x @item.SoLuong</span>
+                        <span>@item.TongTien.ToString("N0") $</span>
+                    </div>
+                }
+
+                <hr />
+
+                <div class="summary-item">
+                    <span>Tạm tính</span>
+                    <span>@subtotal.ToString("N0") $</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Phí vận chuyển</span>
+                    <span>@shippingFee.ToString("N0") $</span>
+                </div>
+
+                <hr />
+
+                <div class="summary-item summary-total">
+                    <span>Tổng cộng</span>
+                    <span>@total.ToString("N0") $</span>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="delivery-info">
-            <div class="mb-3">
-                <label class="form-label">Họ tên</label>
-                <input type="text" name="HoTen" class="form-control user-input" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Địa chỉ</label>
-                <input type="text" name="DiaChi" class="form-control user-input" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Điện thoại</label>
-                <input type="text" name="DienThoai" class="form-control user-input" />
-            </div>
-        </div>
-
-
-        <div class="mb-3 mt-3">
-            <label class="form-label">Ghi chú</label>
-            <textarea name="GhiChu" class="form-control"></textarea>
-        </div>
-
-        <!-- TỔNG TIỀN -->
-        <div class="summary-box">
-            <div class="d-flex justify-content-between">
-                <span>Tạm tính:</span>
-                <span id="subtotal">@subtotal.ToString("N0") ₫</span>
-            </div>
-            <div class="d-flex justify-content-between">
-                <span>Phí vận chuyển:</span>
-                <span>@shippingFee.ToString("N0") ₫</span>
-            </div>
-            <hr />
-            <div class="d-flex justify-content-between fw-bold">
-                <span>Tổng cộng:</span>
-                <span id="total">@total.ToString("N0") ₫</span>
-            </div>
-        </div>
-
-        <!-- PHƯƠNG THỨC THANH TOÁN -->
-        <h5 class="mt-4 mb-3">Chọn phương thức thanh toán</h5>
-        <div class="payment-box">
-            <div class="form-check mb-2">
-                <input class="form-check-input" type="radio" name="payment" value="COD" checked />
-                <label class="form-check-label">Thanh toán khi nhận hàng (COD)</label>
-            </div>
-
-            <div class="form-check mb-2">
-                <input class="form-check-input" type="radio" name="payment" value="Thanh toán VNPay" />
-                <label class="form-check-label">Thanh toán qua VNPay</label>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="payment" value="PayPal" id="payPalRadio" />
-                <label class="form-check-label" for="payPalRadio">Thanh toán bằng PayPal</label>
-            </div>
-
-
-        </div>
-        <!-- Nơi nút PayPal sẽ hiển thị -->
-        <div id="paypal-button-container" style="margin-top:10px; display:none;"></div>
-
-        <button type="submit" class="btn btn-primary w-100 py-2 fs-5 mt-2">
-            XÁC NHẬN THANH TOÁN
-        </button>
     </form>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
-    /* GIỐNG THÔNG TIN KHÁCH HÀNG */
-           $("#GiongKhachHang").change(function () {
+    $("#GiongKhachHang").change(function () {
         if (this.checked) {
             $(".delivery-info").slideUp();
             $(".user-input").removeAttr("required");
@@ -137,13 +167,9 @@
         }
     });
 
-
-
-    /* VALIDATE TRƯỚC KHI GỬI */
-       $("#checkoutForm").submit(function(e) {
+    $("#checkoutForm").submit(function(e) {
         let payment = $("input[name='payment']:checked").val();
 
-        // validate form giống trước
         let sameInfo = $("#GiongKhachHang").is(":checked");
         if (!sameInfo) {
             let valid = true;
@@ -162,14 +188,12 @@
         }
 
         if (payment === "PayPal") {
-            e.preventDefault(); // chặn form gửi để tạo đơn PayPal trước
+            e.preventDefault();
 
-            // Gọi API tạo order
             $.ajax({
                 url: '/Cart/create-paypal-order',
                 type: 'POST',
                 success: function(order) {
-                    // Capture order luôn sau khi tạo
                     $.ajax({
                         url: '/Cart/capture-paypal-order',
                         type: 'POST',
@@ -191,25 +215,25 @@
             return false;
         }
 
-        return true; // COD hoặc VNPay
+        return true;
     });
-
 </script>
+
 <script src="https://www.paypal.com/sdk/js?client-id=@ViewBag.PaypalClientdId&currency=USD"></script>
+
 <script>
     $(document).ready(function() {
 
-        // Khi chọn bất kỳ radio payment nào
         $("input[name='payment']").change(function() {
             var container = $('#paypal-button-container');
 
             if ($(this).val() === 'PayPal') {
                 container.show();
-                container.empty(); // xóa nút cũ trước khi render
+                container.empty();
                 renderPayPalButton();
             } else {
                 container.hide();
-                container.empty(); // ẩn và xóa nút PayPal nếu chọn COD hoặc VNPay
+                container.empty();
             }
         });
 
@@ -241,7 +265,5 @@
                 }
             }).render('#paypal-button-container');
         }
-
     });
 </script>
-

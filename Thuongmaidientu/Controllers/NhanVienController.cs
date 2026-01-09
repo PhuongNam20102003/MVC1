@@ -63,7 +63,7 @@ public class NhanVienController : Controller
         await HttpContext.SignInAsync(new ClaimsPrincipal(identity));
 
         // Chuyển sang trang lịch sử đơn hàng
-        return RedirectToAction("OrderHistory", "Cart");
+        return RedirectToAction("OrderHistory", "Seller");
     }
 
 

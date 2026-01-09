@@ -361,3 +361,4 @@ C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compr
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\nmb5vvn6zw-vwxzmjkmsq.gz
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\9rj49l8ree-jg5j1u6k8b.gz
 C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\compressed\r8yx3b48ts-tdutd00xgn.gz
+C:\Users\NAM\source\repos\Thuongmaidientu\Thuongmaidientu\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

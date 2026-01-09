@@ -17,12 +17,13 @@ public class SellerController : Controller
     public IActionResult OrderHistory()
     {
         var orders = db.HoaDons
-            .Include(h => h.MaKhNavigation)          // Load khách hàng
-            .Include(h => h.ChiTietHds)              // Load chi tiết hóa đơn
-                .ThenInclude(ct => ct.MaHhNavigation) // Load tên sản phẩm
-            .OrderByDescending(h => h.NgayDat)
-            .ToList();
+    .Include(h => h.MaKhNavigation) // khách hàng
+    .Include(h => h.ChiTietHds)    // chi tiết hóa đơn
+        .ThenInclude(ct => ct.MaHhNavigation) // thông tin sản phẩm
+    .OrderByDescending(h => h.NgayDat)
+    .ToList();
 
-        return View(orders);
+
+        return View("OrderHistory", orders);
     }
 }

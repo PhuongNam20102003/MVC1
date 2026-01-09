@@ -36,8 +36,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/OrderHistory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlckhpc3RvcnkuY3NodG1s
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/PaymentFail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxQYXltZW50RmFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Cart/Success.cshtml]
@@ -86,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/NhanVien/DangNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGFuZ05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Seller/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyXE9yZGVySGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NAM/source/repos/Thuongmaidientu/Thuongmaidientu/Views/Shared/Components/Cart/CartPanel.cshtml]

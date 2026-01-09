@@ -345,6 +345,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\android_300200.png"
     },
     {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\Hinh\\KhachHang\\images.png",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\images.png"
+    },
+    {
       "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\Hinh\\KhachHang\\man.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
     },
@@ -1271,6 +1275,26 @@
     {
       "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\favicon\\web-app-manifest-512x512.png",
       "PackagePath": "staticwebassets\\favicon\\web-app-manifest-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\31EPGSm2s1L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\img\\31EPGSm2s1L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\31hCgES5GXL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\img\\31hCgES5GXL._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\41CIcYRxJKL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\img\\41CIcYRxJKL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\41MJUdI2jdL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\img\\41MJUdI2jdL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\81k1XbQ6nQL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\img\\81k1XbQ6nQL._SL1500_.jpg"
     },
     {
       "Id": "C:\\Users\\NAM\\source\\repos\\Thuongmaidientu\\Thuongmaidientu\\wwwroot\\img\\avatar.jpg",

@@ -5,6 +5,9 @@ using Thuongmaidientu.Data;
 using Thuongmaidientu.Helpers;
 using Thuongmaidientu.Services;
 using Thuongmaidientu.ViewModels;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
+using System.Globalization;
 
 namespace Thuongmaidientu.Controllers
 {
@@ -91,18 +94,6 @@ namespace Thuongmaidientu.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (payment == "Thanh toán VNPay")
-                {
-                    var vnPayModel = new VnPaymentRequestModel
-                    {
-                        Amount = Cart.Sum(p => p.TongTien),
-                        CreatedDate = DateTime.Now,
-                        Description = $"{model.HoTen} {model.DienThoai}",
-                        FullName = model.HoTen,
-                        OrderId = new Random().Next(1000, 100000)
-                    };
-                    return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
-                }
 
                 var customerId = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value;
                 var khachHang = new KhachHang();
@@ -167,6 +158,19 @@ namespace Thuongmaidientu.Controllers
                     db.AddRange(cthds);
                     db.SaveChanges();
                     db.Database.CommitTransaction();
+
+                    if (payment == "Thanh toán VNPay")
+                    {
+                        var vnPayModel = new VnPaymentRequestModel
+                        {
+                            Amount = Cart.Sum(p => p.TongTien),
+                            CreatedDate = DateTime.Now,
+                            Description = $"{model.HoTen} {model.DienThoai}",
+                            FullName = model.HoTen,
+                            OrderId = new Random().Next(1000, 100000)
+                        };
+                        return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
+                    }
 
                     // Xóa giỏ hàng sau khi thanh toán thành công
                     HttpContext.Session.Set<List<CartItem>>(MySetting.CART_KEY, new List<CartItem>());
@@ -247,16 +251,17 @@ namespace Thuongmaidientu.Controllers
 
             if (response == null || response.VnPayResponseCode != "00")
             {
-                TempData["Message"] = $"Lỗi thanh toán VN Pay: {response.VnPayResponseCode}";
+                TempData["Message"] = $"Lỗi thanh toán VN Pay: {response?.VnPayResponseCode}";
                 return RedirectToAction("PaymentFail");
             }
 
+            // ===== XÓA GIỎ HÀNG SAU KHI THANH TOÁN THÀNH CÔNG =====
+            HttpContext.Session.Remove(MySetting.CART_KEY);
 
-            // Lưu đơn hàng vô database
-
-            TempData["Message"] = $"Thanh toán VNPay thành công";
+            TempData["Message"] = "Thanh toán VNPay thành công";
             return RedirectToAction("PaymentSuccess");
         }
+
 
         [HttpGet]
         public IActionResult UpdateQuantity(int id, int quantity)

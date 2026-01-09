@@ -1,57 +1,119 @@
 ﻿@{
     ViewData["Title"] = "Trang Chủ";
-    ViewData["MetaDescription"] = "N&NShop cung cấp đa dạng sản phẩm tươi ngon, chất lượng cao với giá cả hợp lý. Khám phá ngay các sản phẩm nổi bật và ưu đãi hấp dẫn!";
+    ViewData["MetaDescription"] = "N&NShop cung cấp đa dạng sản phẩm chất lượng cao với giá cả hợp lý. Khám phá ngay các sản phẩm nổi bật và ưu đãi hấp dẫn!";
 }
 
-<!-- Banner trang chủ -->
+<!-- Banner -->
 <div class="container-fluid p-0 mb-5">
     <div class="position-relative">
-        <img src="~/img/banner.jpg" class="img-fluid w-100" alt="Banner N&NShop" style="max-height: 500px; object-fit: cover;">
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-            <h1 class="display-4 fw-bold">Chào mừng đến với N&NShop - Sản phẩm tươi ngon, chất lượng cao</h1>
-            <p class="lead">Khám phá các sản phẩm nổi bật và ưu đãi hấp dẫn</p>
-            <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Hanghoa")">Mua Ngay</a>
+        <img src="~/img/banner-home.jpg" class="img-fluid w-100" alt="Banner N&NShop" style="height: 500px; object-fit: cover;">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="text-shadow: 0 2px 6px rgba(0,0,0,0.5);">
+            <h1 class="display-4 fw-bold">Chào mừng đến với N&NShop</h1>
+            <p class="lead">Đồ gia dụng chất lượng cao – Giá cả hợp lý</p>
+            <a class="btn btn-success btn-lg px-4" href="@Url.Action("Index", "Hanghoa")">Mua Ngay</a>
         </div>
     </div>
 </div>
 
 <!-- Sản phẩm nổi bật -->
 <div class="container py-5">
-    <h2 class="mb-4">Sản phẩm nổi bật</h2>
+    <h2 class="mb-5 text-center">Sản phẩm nổi bật</h2>
     <div class="row g-4">
-        <div class="col-md-3">
-            <div class="card h-100">
-                <img src="~/img/featured1.jpg" class="card-img-top" alt="Sản phẩm 1">
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
+                <div class="overflow-hidden" style="height: 200px;">
+                    <img src="~/img/41CIcYRxJKL._SL500_AA300_.jpg" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="Bình đun siêu tốc">
+                </div>
                 <div class="card-body text-center">
-                    <h3 class="card-title">Sản phẩm 1</h3>
-                    <p class="text-primary fw-bold">2.99 $</p>
-                    <a class="btn btn-outline-primary btn-sm" href="@Url.Action("Detail", "Hanghoa", new { id = 1 })">Xem chi tiết</a>
+                    <h5 class="card-title">Chef Anton's Cajun Seasoning</h5>
+                    <p class="text-success fw-bold">22$</p>
+                    <a class="btn btn-outline-success btn-sm px-4" href="@Url.Action("Detail", "Hanghoa", new { id = 1 })">Xem chi tiết</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card h-100">
-                <img src="~/img/featured2.jpg" class="card-img-top" alt="Sản phẩm 2">
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
+                <div class="overflow-hidden" style="height: 200px;">
+                    <img src="~/img/41MJUdI2jdL._SL500_AA300_.jpg" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="Nồi cơm điện">
+                </div>
                 <div class="card-body text-center">
-                    <h3 class="card-title">Sản phẩm 2</h3>
-                    <p class="text-primary fw-bold">3.49 $</p>
-                    <a class="btn btn-outline-primary btn-sm" href="@Url.Action("Detail", "Hanghoa", new { id = 2 })">Xem chi tiết</a>
+                    <h5 class="card-title">Aniseed Syrup 123</h5>
+                    <p class="text-success fw-bold">190$</p>
+                    <a class="btn btn-outline-success btn-sm px-4" href="@Url.Action("Detail", "Hanghoa", new { id = 2 })">Xem chi tiết</a>
                 </div>
             </div>
         </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
+                <div class="overflow-hidden" style="height: 200px;">
+                    <img src="~/img/81k1XbQ6nQL._SL1500_.jpg" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="Máy xay sinh tố">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Uncle Bob's Organic Dried Pears</h5>
+                    <p class="text-success fw-bold">30$</p>
+                    <a class="btn btn-outline-success btn-sm px-4" href="@Url.Action("Detail", "Hanghoa", new { id = 3 })">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
+                <div class="overflow-hidden" style="height: 200px;">
+                    <img src="~/img/31hCgES5GXL._AA300_.jpg" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="Ấm trà điện">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ikura</h5>
+                    <p class="text-success fw-bold"> 31$</p>
+                    <a class="btn btn-outline-success btn-sm px-4" href="@Url.Action("Detail", "Hanghoa", new { id = 4 })">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
 <!-- Giới thiệu cửa hàng -->
 <div class="container py-5">
     <div class="row align-items-center">
-        <div class="col-md-6">
-            <img src="~/img/about-us.jpg" class="img-fluid rounded" alt="Về chúng tôi">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="~/img/store.jpg" class="img-fluid rounded shadow-sm" alt="Về chúng tôi">
         </div>
         <div class="col-md-6">
             <h2>Về N&NShop</h2>
             <p>Chúng tôi cung cấp các sản phẩm tươi ngon, chất lượng cao với giá cả hợp lý. Cam kết mang đến trải nghiệm mua sắm tuyệt vời cho khách hàng.</p>
-            <a class="btn btn-primary" href="@Url.Action("Index", "Hanghoa")">Khám phá sản phẩm</a>
+            <a class="btn btn-success px-4" href="@Url.Action("Index", "Hanghoa")">Khám phá sản phẩm</a>
         </div>
     </div>
 </div>
+
+<style>
+    /* Hover nâng card */
+    .product-card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Text và nút đồng bộ màu thương hiệu */
+    h5.card-title {
+        font-size: 1.1rem;
+    }
+
+    .btn-success {
+        background-color: #8BC34A;
+        border-color: #8BC34A;
+    }
+
+    .btn-outline-success {
+        color: #8BC34A;
+        border-color: #8BC34A;
+    }
+
+        .btn-outline-success:hover {
+            background-color: #7CB342;
+            color: #fff;
+        }
+</style>
